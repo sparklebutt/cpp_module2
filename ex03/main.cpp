@@ -6,7 +6,7 @@
 /*   By: shaboom <shaboom@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 12:06:26 by shaboom           #+#    #+#             */
-/*   Updated: 2024/12/07 15:16:13 by shaboom          ###   ########.fr       */
+/*   Updated: 2024/12/07 15:19:16 by shaboom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int		main()
 		std::cout<<"not inside the triangle"<<std::endl;
 	return 0;
 }
-
 /**
  * here lies an example main that will darw some kind of image onto terminal
  * alternativly you can use this websit www.desmos.com for a more visual and 
@@ -82,4 +81,21 @@ void drawMap(const Point& a, const Point& b, const Point& c, const Point& p) {
         }
         std::cout << std::endl;
     }
+}
+
+int main() {
+    Point a(3.0, 4.0, "a");
+    Point b(3.0, 7.0, "b");
+    Point c(6.0, 7.0, "c");
+    Point p(5.3, 6.7, "point");
+
+    drawMap(a, b, c, p);
+
+    if (bsp(a, b, c, p)) {
+        std::cout << "inside the triangle" << std::endl;
+    } else {
+        std::cout << "not inside the triangle" << std::endl;
+    }
+
+    return 0;
 }*/
