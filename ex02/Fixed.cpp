@@ -6,12 +6,12 @@
 /*   By: araveala <araveala@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 09:48:18 by shaboom           #+#    #+#             */
-/*   Updated: 2024/12/10 11:19:15 by araveala         ###   ########.fr       */
+/*   Updated: 2024/12/10 11:44:46 by araveala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
-#include "Point.hpp"
+
 const int Fixed:: fractionalBits = 8;
 
 Fixed::Fixed() : rawValue(0)
